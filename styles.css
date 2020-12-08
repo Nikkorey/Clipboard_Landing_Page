@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --ff-sans: "Bai Jamjuree", sans-serif;
+
+  /* small screen font-sizes */
+  --fs-200: 0.75rem;
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.375rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+  --fs-900: 2.125rem;
+
+  --fw-200: 200;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --clr-neutral-100: #fff;
+  --clr-neutral-200: hsl(202, 11%, 66%);
+  --clr-neutral-400: hsl(212, 10%, 33%);
+
+  --clr-primary: hsl(171, 66%, 44%);
+  --clr-secondary: hsl(233, 100%, 69%);
+
+  --br: 1rem;
+}
+
+@media (min-width: 40em) {
+  :root {
+    /* Large screen font-sizes */
+    --fs-300: 1.125rem;
+    --fs-700: 2.25rem;
+    --fs-800: 2.875rem;
+  }
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-300);
+  color: var(--clr-neutral-200);
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  color: var(--clr-neutral-400);
+}
+
+.section-title {
+  font-size: var(--fs-700);
+}
+
+.sub-title {
+  color: var(--clr-neutral-300);
+}
+
+.main-title {
+  font-size: var(--fs-800);
+}
+
+.text-600 {
+  font-size: var(--fs-600);
+}
+
+.text-400 {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-600);
+}
+
+/* Utility Classes */
+
+.text-center {
+  text-align: center;
+}
+
+.split {
+  display: flex;
+  justify-content: center;
+}
+
+.flow-content > * + * {
+  margin-top: 1rem;
+}
+
+/* General Lay-out */
+
+.main__header {
+  background-image: url(/images/bg-header-mobile.png);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+/* Components */
+
+.btn {
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  background-color: var(--accent, var(--clr-primary));
+  color: var(--clr-neutral-100);
+  width: 100%;
+}
+
+.btn-accent {
+  --accent: var(--clr-secondary);
+}
+
+.container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+  border: solid;
+  padding: 0 1.5rem;
+}
