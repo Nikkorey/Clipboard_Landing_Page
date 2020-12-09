@@ -106,8 +106,7 @@ h3 {
 }
 
 .split {
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
 .flow-content > * + * {
@@ -128,16 +127,18 @@ h3 {
   margin-bottom: 0;
 }
 
-/* .m-bottom {
-  margin-bottom: 2em;
-} */
+/* General Lay-out */
 
 section,
 footer {
   padding: 5rem 0;
 }
 
-/* General Lay-out */
+.container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
 
 .main__header {
   background-image: url(/images/bg-header-mobile.png);
@@ -174,16 +175,6 @@ footer {
 
 .btn-accent {
   --accent: var(--clr-secondary);
-}
-
-.container {
-  max-width: 69.375rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-.split {
-  display: block;
 }
 
 @media (min-width: 40em) {
