@@ -18,53 +18,58 @@
 
 </head>
 <body>
-  <header class="main__header text-center">
-    <div class="container">
-        <img src="/images/logo.svg" alt="">
-        <h1 class="main-title">A history of everything you copy</h1>
-        <p class="sub-title">Clipboard allows you to track and organize everything you 
-          copy. Instantly access your clipboard on all your devices.</p>
-        <a href="#" class="btn text-400">Download for iOS</a>
-        <a href="#" class="btn btn-accent text-400">Download for iOS</a>
-      </div>
+  <div class="background"></div>
+    <header class="main__header text-center">
+        <div class="container"> 
+          <img src="/images/logo.svg" alt="Clipboard Logo">
+          <div class="flow-content m-space">
+            <h1 class="main-title">A history of everything you copy</h1>
+            <p class="sub-title">Clipboard allows you to track and organize everything you 
+              copy. Instantly access your clipboard on all your devices.</p>
+          </div>
+          <div class="m-space">
+            <a href="#" class="btn text-400">Download for iOS</a>
+            <a href="#" class="btn btn-accent text-400">Download for iOS</a>
+          </div>
+        </div>
     </header>
 
-    <section class="section text-center">
+    <section class="section-one text-center">
       <div class="container">
-        <header class="flow-content">
+        <header class="flow-content m-bottom">
           <h2 class="section-title">Keep track of your snippets</h2>
           <p class="sub-title">Clipboard instantly stores any item you copy in the cloud, 
             meaning you can access your snippets immediately on all your 
             devices. Our Mac and iOS apps will help you organize everything.</p>
         </header>
-        <div>
-          <img src="/images/image-computer.png" alt="">
-          <ul class="track">
-            <li>
+        <div class="split">
+          <img src="/images/image-computer.png" alt="desktop image" class="m-space">
+          <ul class=" flow-content--lg m-space">
+            <li class="flow-content">
               <h3 class="text-600">Quick Search</h3>
               <p>Easily search your snippets by content, category, web address, application, and more.</p>
             </li>
-            <li>
+            <li class="flow-content">
               <h3 class="text-600">iCloud Sync</h3>
               <p>Instantly saves and syncs snippets across all your devices.</p>
             </li>
-            <li>
+            <li class="flow-content">
               <h3 class="text-600">Complete History</h3>
               <p>Retrieve any snippets from the first moment you started using the app.</p>
             </li>
           </ul>
-        </div>  
+        </div>
       </div>
     </section>
 
   <section class="text-center">
     <div class="container">
-      <header class="flow-content">
-        <h2 class="section-title">Access Clipboard anywhere</h2>
+      <header class="flow-content m-bottom">
+        <h2 class="section-title">Access Clipboard Anywhere</h2>
         <p class="sub-title">Whether you’re on the go, or at your computer, you can access all your Clipboard 
           snippets in a few simple clicks.</p>
       </header>
-      <img src="/images/image-devices.png" alt="">
+      <img src="/images/image-devices.png" alt="devices" class="m-space">
     </div>
   </section>
 
@@ -75,39 +80,39 @@
         <p class="sub-title">We’ve got the tools to boost your productivity.</p>
       </header>
       
-      <ul class="list__container">
-        <li>
+      <ul class="split l-space flow-content--lg l-space">
+        <li class="flow-content">
           <img src="/images/icon-blacklist.svg" alt="">
           <h3>Create blacklists</h3>
           <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
         </li>
-        <li>   
+        <li class="flow-content">   
           <img src="/images/icon-text.svg" alt="">
           <h3>Plain text snippets</h3>
           <p>Remove unwanted formatting from copied text for a consistent look.</p>
         </li>
-        <li>
+        <li class="flow-content">
           <img src="/images/icon-preview.svg" alt="">
           <h3>Sneak preview</h3>
           <p>Quick preview of all snippets on your Clipboard for easy access.</p>
         </li>
       </ul>
   
-      <ul class="logo__container">
+      <ul class="flow-content--lg l-space split">
         <li>
-          <img src="/images/logo-google.png" alt="">
+          <img src="/images/logo-google.png" alt="google logo">
         </li>
         <li>
-          <img src="/images/logo-ibm.png" alt="">
+          <img src="/images/logo-ibm.png" alt="IBM logo">
         </li>
         <li>
-          <img src="/images/logo-microsoft.png" alt="">
+          <img src="/images/logo-microsoft.png" alt="microsoft logo">
         </li>
         <li>
-          <img src="/images/logo-hp.png" alt="">
+          <img src="/images/logo-hp.png" alt="hp logo">
         </li>
         <li>
-          <img src="/images/logo-vector-graphics.png" alt="">
+          <img src="/images/logo-vector-graphics.png" alt="vector logo">
         </li>
       </ul>
     </div>
@@ -120,16 +125,18 @@
         <p class="sub-title">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.
         </p>
       </header>
-      <a href="#" class="btn text-400">Download for iOS</a>
-      <a href="#" class="btn btn-accent text-400">Download for iOS</a>
+      <div class="m-space flow-content">
+        <a href="#" class="btn text-400">Download for iOS</a>
+        <a href="#" class="btn btn-accent text-400">Download for iOS</a>
+      </div>
     </div>
   </section>
 
-  <footer class="footer text-center">
+  <footer class="footer text-center l-space">
     <div class="container">
-      <img src="./images/logo.svg" alt="">
+      <img src="./images/logo.svg" alt="Clipboard Logo" class="footer__logo">
   
-      <ul>
+      <ul class="flow-content">
         <li>FAQs</li>
         <li>Contact Us</li>
         <li>Privacy Policy</li>
@@ -139,7 +146,7 @@
   
       <ul class="split">
         <li class="footer__social-list"><a href="#"><img src="/images/icon-facebook.svg" alt=""></a></li>
-        <li class="footer__social-list"><a href="#"><img src="/images/icon-twitter.svg" alt=""></a></li>
+        <li class="footer__social-list"><a href="#"><img src="/images/icon-twitter.svg" alt="" class="footer__twitter"></a></li>
         <li class="footer__social-list"><a href="#"><img src="/images/icon-instagram.svg" alt=""></a></li>
       </ul>
     </div>
