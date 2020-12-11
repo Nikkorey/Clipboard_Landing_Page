@@ -66,6 +66,7 @@ body {
   font-family: var(--ff-sans);
   font-size: var(--fs-300);
   color: var(--clr-neutral-200);
+  line-height: 1.7;
 }
 
 /* Typography */
@@ -106,7 +107,8 @@ h3 {
 }
 
 .split {
-  display: block;
+  display: flex;
+  flex-direction: var(--flex-direction, column);
 }
 
 .flow-content > * + * {
@@ -118,20 +120,22 @@ h3 {
 }
 
 .l-space {
-  margin-top: 5em;
-  margin-bottom: 0;
+  margin-top: 8rem;
 }
 
 .m-space {
-  margin-top: 3em;
-  margin-bottom: 0;
+  margin-top: 5em;
 }
 
 /* General Lay-out */
 
 section,
 footer {
-  padding: 5rem 0;
+  padding: 5rem 0 3rem 0;
+}
+
+.section-one {
+  margin-top: 24rem;
 }
 
 .container {
@@ -140,13 +144,20 @@ footer {
   padding: 0 1.5rem;
 }
 
+.track {
+  margin: 5em auto;
+  padding: 0 1.5rem;
+}
+
 .main__header {
+  height: 370px;
   background-image: url(/images/bg-header-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* border: solid;
-  margin-bottom: 10rem;
-  height: 250px; */
+}
+
+.main__content {
+  padding-top: 5.5rem;
 }
 
 /* .main__content {
@@ -160,6 +171,15 @@ footer {
 
 .footer__logo {
   width: 55px;
+}
+
+.social__list {
+  --flex-direction: row;
+  justify-content: center;
+}
+
+.social__list > * + * {
+  margin-left: 2.5rem;
 }
 
 /* Components */
@@ -177,7 +197,7 @@ footer {
   --accent: var(--clr-secondary);
 }
 
-@media (min-width: 40em) {
+@media (min-width: 1024px) {
   :root {
     /* Large screen font-sizes */
     --fs-300: 1.125rem;
@@ -191,11 +211,53 @@ footer {
 
   .split {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: var(--content, center);
     align-items: center;
   }
 
+  .tools__logo {
+    --content: space-between;
+  }
+
+  .split > * + * {
+    margin: 0 0 0 1rem;
+  }
+
+  /* General Lay-out */
+
   .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-one {
+    margin-top: 15rem;
+  }
+
+  .track {
+    display: grid;
+    grid-template-columns: 752px 1fr;
+    grid-gap: 6rem;
+    translate: -2rem;
     padding: 0;
+  }
+
+  .track__info {
+    align-self: center;
+    text-align: left;
+    margin: 0;
+    max-width: 400px;
+    --flow-spacer: 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+  }
+
+  .footer {
+    padding: 1rem 0;
   }
 }

@@ -18,33 +18,36 @@
 
 </head>
 <body>
-  <div class="background"></div>
-    <header class="main__header text-center">
-        <div class="container"> 
-          <img src="/images/logo.svg" alt="Clipboard Logo">
-          <div class="flow-content m-space">
-            <h1 class="main-title">A history of everything you copy</h1>
-            <p class="sub-title">Clipboard allows you to track and organize everything you 
-              copy. Instantly access your clipboard on all your devices.</p>
+    <div class="background">
+    </div>
+      <header class="main__header text-center">
+          <div class="container main__content"> 
+            <img src="/images/logo.svg" alt="Clipboard Logo">
+            <div class="flow-content m-space">
+              <h1 class="main-title">A history of everything you copy</h1>
+              <p class="sub-title">Clipboard allows you to track and organize everything you 
+                copy. Instantly access your clipboard on all your devices.</p>
+            </div>
+            <div class="m-space split flow-content text-400">
+              <a href="#" class="btn ">Download for iOS</a>
+              <a href="#" class="btn btn-accent">Download for iOS</a>
+            </div>
           </div>
-          <div class="m-space">
-            <a href="#" class="btn text-400">Download for iOS</a>
-            <a href="#" class="btn btn-accent text-400">Download for iOS</a>
-          </div>
-        </div>
-    </header>
+      </header>
+
 
     <section class="section-one text-center">
       <div class="container">
-        <header class="flow-content m-bottom">
-          <h2 class="section-title">Keep track of your snippets</h2>
-          <p class="sub-title">Clipboard instantly stores any item you copy in the cloud, 
-            meaning you can access your snippets immediately on all your 
-            devices. Our Mac and iOS apps will help you organize everything.</p>
-        </header>
-        <div class="split">
-          <img src="/images/image-computer.png" alt="desktop image" class="m-space">
-          <ul class=" flow-content--lg m-space">
+          <header class="flow-content">
+            <h2 class="section-title">Keep track of your snippets</h2>
+            <p class="sub-title">Clipboard instantly stores any item you copy in the cloud, 
+              meaning you can access your snippets immediately on all your 
+              devices. Our Mac and iOS apps will help you organize everything.</p>
+          </header>
+        </div>
+        <div class="track m-space">
+          <img src="/images/image-computer.png" alt="desktop image" class="desktop">
+          <ul class="flow-content--lg m-space track__info">
             <li class="flow-content">
               <h3 class="text-600">Quick Search</h3>
               <p>Easily search your snippets by content, category, web address, application, and more.</p>
@@ -59,7 +62,6 @@
             </li>
           </ul>
         </div>
-      </div>
     </section>
 
   <section class="text-center">
@@ -80,7 +82,7 @@
         <p class="sub-title">We’ve got the tools to boost your productivity.</p>
       </header>
       
-      <ul class="split l-space flow-content--lg l-space">
+      <ul class="split m-space flow-content--lg tools__list">
         <li class="flow-content">
           <img src="/images/icon-blacklist.svg" alt="">
           <h3>Create blacklists</h3>
@@ -98,7 +100,7 @@
         </li>
       </ul>
   
-      <ul class="flow-content--lg l-space split">
+      <ul class="flow-content--lg l-space split tools__logo">
         <li>
           <img src="/images/logo-google.png" alt="google logo">
         </li>
@@ -125,7 +127,7 @@
         <p class="sub-title">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.
         </p>
       </header>
-      <div class="m-space flow-content">
+      <div class="m-space split flow-content">
         <a href="#" class="btn text-400">Download for iOS</a>
         <a href="#" class="btn btn-accent text-400">Download for iOS</a>
       </div>
@@ -133,10 +135,10 @@
   </section>
 
   <footer class="footer text-center l-space">
-    <div class="container">
+    <div class="container grid">
       <img src="./images/logo.svg" alt="Clipboard Logo" class="footer__logo">
   
-      <ul class="flow-content">
+      <ul class="flow-content grid">
         <li>FAQs</li>
         <li>Contact Us</li>
         <li>Privacy Policy</li>
@@ -144,10 +146,10 @@
         <li>Install Guide</li>
       </ul>
   
-      <ul class="split">
-        <li class="footer__social-list"><a href="#"><img src="/images/icon-facebook.svg" alt=""></a></li>
-        <li class="footer__social-list"><a href="#"><img src="/images/icon-twitter.svg" alt="" class="footer__twitter"></a></li>
-        <li class="footer__social-list"><a href="#"><img src="/images/icon-instagram.svg" alt=""></a></li>
+      <ul class="split social__list">
+        <li><a href="#"><img src="/images/icon-facebook.svg" alt=""></a></li>
+        <li><a href="#"><img src="/images/icon-twitter.svg" alt=""></a></li>
+        <li><a href="#"><img src="/images/icon-instagram.svg" alt=""></a></li>
       </ul>
     </div>
   </footer>
