@@ -112,19 +112,11 @@ h3 {
 }
 
 .flow-content > * + * {
-  margin-top: var(--flow-spacer, 1em);
-}
-
-.flow-content--lg > * + * {
-  margin-top: 3.5em;
-}
-
-.l-space {
-  margin-top: 8rem;
+  margin-top: var(--flow, 1em);
 }
 
 .m-space {
-  margin-top: 5em;
+  margin-top: var(--l-space, 4rem);
 }
 
 /* General Lay-out */
@@ -134,14 +126,14 @@ footer {
   padding: 5rem 0 3rem 0;
 }
 
-.section-one {
-  margin-top: 24rem;
-}
-
 .container {
   max-width: 69.375rem;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+.section-track {
+  margin-top: 25rem;
 }
 
 .track {
@@ -160,11 +152,12 @@ footer {
   padding-top: 5.5rem;
 }
 
-/* .main__content {
-  position: relative;
-  top: 5rem;
-} */
+.super__logo > * + * {
+  --flow: 3em;
+  border: solid;
+}
 
+/* Footer */
 .footer {
   background-color: var(--clr-neutral-500);
 }
@@ -216,7 +209,7 @@ footer {
     align-items: center;
   }
 
-  .tools__logo {
+  .super__logo {
     --content: space-between;
   }
 
@@ -231,8 +224,8 @@ footer {
     padding-right: 0;
   }
 
-  .section-one {
-    margin-top: 15rem;
+  .section-track {
+    margin-top: 18 rem;
   }
 
   .track {
@@ -241,6 +234,7 @@ footer {
     grid-gap: 6rem;
     translate: -2rem;
     padding: 0;
+    max-width: 1440px;
   }
 
   .track__info {
