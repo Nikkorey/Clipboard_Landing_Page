@@ -132,7 +132,7 @@ h3 {
 section,
 footer,
 .client__logo {
-  padding: 5rem 0 3rem 0;
+  padding: 3rem 0 2rem 0;
 }
 
 .container {
@@ -285,13 +285,13 @@ svg:hover {
   }
 
   .section-track {
-    margin-top: 18rem;
+    margin-top: 16rem;
   }
 
   .track {
     display: grid;
     grid-template-columns: 752px 1fr;
-    grid-gap: 6rem;
+    grid-gap: 8rem;
     transform: translateX(-2rem);
     padding: 0;
     max-width: 1440px;
@@ -301,7 +301,7 @@ svg:hover {
     align-self: center;
     text-align: left;
     margin: 0;
-    max-width: 400px;
+    max-width: 380px;
     --flow-spacer: 0;
   }
 
