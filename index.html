@@ -7,6 +7,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Clipboard landing page</title>
+
+  <!--Font awesome CDN-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  />
   
   <link rel="stylesheet" href="styles.css">
 
@@ -18,49 +24,50 @@
 
 </head>
 <body>
-    <header class="main__header text-center">
-        <div class="container main__content"> 
-          <img src="/images/logo.svg" alt="Clipboard Logo">
-          <div class="flow-content m-space">
-            <h1 class="main-title">A history of everything you copy</h1>
-            <p class="sub-title">Clipboard allows you to track and organize everything you 
-              copy. Instantly access your clipboard on all your devices.</p>
-          </div>
-          <div class="m-space split flow-content text-400">
-            <a href="#" class="btn ">Download for iOS</a>
-            <a href="#" class="btn btn-accent">Download for iOS</a>
-          </div>
+  <!-- Start of Main Header -->
+  <header class="main__header text-center">
+      <div class="container main__content"> 
+        <img src="/images/logo.svg" alt="Clipboard Logo">
+        <div class="flow-content m-space">
+          <h1 class="main-title">A history of everything you copy</h1>
+          <p class="sub-title">Clipboard allows you to track and organize everything you 
+            copy. Instantly access your clipboard on all your devices.</p>
         </div>
-    </header>
+        <div class="m-space split text-400">
+          <a href="#" class="btn">Download for iOS</a>
+          <a href="#" class="btn btn-accent">Download for iOS</a>
+        </div>
+      </div>
+  </header>
 
-    <!-- Start of Track Section -->
-    <section class="section-track text-center">
-        <div class="container">
-          <header class="flow-content">
-            <h2 class="section-title">Keep track of your snippets</h2>
-            <p class="sub-title">Clipboard instantly stores any item you copy in the cloud, 
-              meaning you can access your snippets immediately on all your 
-              devices. Our Mac and iOS apps will help you organize everything.</p>
-          </header>
-        </div>
-        <div class="track">
-          <img src="/images/image-computer.png" alt="desktop image" class="desktop">
-          <ul class="flow-content--lg m-space track__info">
-            <li class="flow-content">
-              <h3 class="text-600">Quick Search</h3>
-              <p>Easily search your snippets by content, category, web address, application, and more.</p>
-            </li>
-            <li class="flow-content">
-              <h3 class="text-600">iCloud Sync</h3>
-              <p>Instantly saves and syncs snippets across all your devices.</p>
-            </li>
-            <li class="flow-content">
-              <h3 class="text-600">Complete History</h3>
-              <p>Retrieve any snippets from the first moment you started using the app.</p>
-            </li>
-          </ul>
-        </div>
-    </section>
+  <!-- Start of Track Section -->
+  <section class="section-track text-center">
+    <div class="container">
+      <header class="flow-content">
+        <h2 class="section-title">Keep track of your snippets</h2>
+        <p class="sub-title">Clipboard instantly stores any item you copy in the cloud, 
+          meaning you can access your snippets immediately on all your 
+          devices. Our Mac and iOS apps will help you organize everything.</p>
+      </header>
+    </div>
+    <article class="track">
+      <img src="/images/image-computer.png" alt="desktop image" class="desktop">
+      <ul class="track__info m-space flow-content--lg">
+        <li class="flow-content">
+          <h3 class="text-600">Quick Search</h3>
+          <p>Easily search your snippets by content, category, web address, application, and more.</p>
+        </li>
+        <li class="flow-content">
+          <h3 class="text-600">iCloud Sync</h3>
+          <p>Instantly saves and syncs snippets across all your devices.</p>
+        </li>
+        <li class="flow-content">
+          <h3 class="text-600">Complete History</h3>
+          <p>Retrieve any snippets from the first moment you started using the app.</p>
+        </li>
+      </ul> 
+    </article>
+  </section>
 
   <!-- Start of Access Section -->
   <section class="text-center">
@@ -82,19 +89,19 @@
         <p class="sub-title">We’ve got the tools to boost your productivity.</p>
       </header>
       
-      <ul class="split m-space">
+      <ul class="split m-space super__info flow-content--lg">
         <li class="flow-content">
-          <img src="/images/icon-blacklist.svg" alt="">
+          <img src="/images/icon-blacklist.svg" alt="blacklist icon">
           <h3>Create blacklists</h3>
           <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
         </li>
         <li class="flow-content">   
-          <img src="/images/icon-text.svg" alt="">
+          <img src="/images/icon-text.svg" alt="AI Icon">
           <h3>Plain text snippets</h3>
           <p>Remove unwanted formatting from copied text for a consistent look.</p>
         </li>
         <li class="flow-content">
-          <img src="/images/icon-preview.svg" alt="">
+          <img src="/images/icon-preview.svg" alt="Eye Icon">
           <h3>Sneak preview</h3>
           <p>Quick preview of all snippets on your Clipboard for easy access.</p>
         </li>
@@ -102,10 +109,10 @@
     </div>
   </section>
 
-  <!-- Start of ClientLogo Section -->
-  <section class="client__logo text-center">
+  <!-- Start of ClientLogo article -->
+  <div class="client__logo text-center">
     <div class="container">
-      <ul class="split super__logo">
+      <ul class="super__logo split flow-content--lg">
         <li>
           <img src="/images/logo-google.png" alt="google logo">
         </li>
@@ -123,7 +130,7 @@
         </li>
       </ul>
     </div>
-  </section>
+  </div>
 
   <!-- Start of Clipboard Section -->
   <section class="text-center">
@@ -133,7 +140,7 @@
         <p class="sub-title">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.
         </p>
       </header>
-      <div class="m-space split flow-content">
+      <div class="m-space split ">
         <a href="#" class="btn text-400">Download for iOS</a>
         <a href="#" class="btn btn-accent text-400">Download for iOS</a>
       </div>
@@ -141,32 +148,29 @@
   </section>
 
   <!-- Start of Footer -->
-  <footer class="footer text-center l-space">
-    <div class="container grid">
+  <footer class="footer text-center">
+    <div class="container footer__wrapper">
       <img src="./images/logo.svg" alt="Clipboard Logo" class="footer__logo">
   
-      <ul class="flow-content grid">
-        <li>FAQs</li>
-        <li>Contact Us</li>
-        <li>Privacy Policy</li>
-        <li>Press Kit</li>
-        <li>Install Guide</li>
+      <ul class="footer__list">
+        <li><a href="#" class="footer__link-items">FAQs</a></li>
+        <li><a href="#" class="footer__link-items"">Contact Us</a></li>
+        <li><a href="#" class="footer__link-items"">Privacy Policy</a></li>
+        <li><a href="#" class="footer__link-items"">Press Kit</a></li>
+        <li><a href="#" class="footer__link-items"">Install Guide</a></li>
       </ul>
   
-      <ul class="split social__list">
-        <li><a href="#"><img src="/images/icon-facebook.svg" alt=""></a></li>
-        <li><a href="#"><img src="/images/icon-twitter.svg" alt=""></a></li>
-        <li><a href="#"><img src="/images/icon-instagram.svg" alt=""></a></li>
+      <ul class="footer__social">
+        <li><a href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
       </ul>
     </div>
   </footer>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Nikkorey" target="_blank">Nikko Rey Hular</a>.
+  </p>
  
-  
-  <footer class="text-center">
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
 </body>
 </html>
