@@ -104,6 +104,10 @@ h3 {
   font-weight: var(--fw-600);
 }
 
+.text-400 {
+  font-size: var(--fs-600);
+}
+
 /* Utility Classes */
 
 .text-center {
@@ -132,7 +136,7 @@ h3 {
 section,
 footer,
 .client__logo {
-  padding: 3rem 0 3rem 0;
+  padding: 3rem 0 2.5rem 0;
 }
 
 .container {
@@ -168,6 +172,10 @@ footer,
 
 .super__info > * + * {
   align-self: flex-start;
+}
+
+.client__logo {
+  margin: 1.5em;
 }
 
 /* Footer */
