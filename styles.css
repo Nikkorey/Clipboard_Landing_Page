@@ -104,7 +104,7 @@ h3 {
   font-weight: var(--fw-600);
 }
 
-.text-400 {
+.text-600 {
   font-size: var(--fs-600);
 }
 
@@ -181,7 +181,7 @@ footer,
 /* Footer */
 .footer {
   background-color: var(--clr-neutral-500);
-  margin-top: 6em;
+  margin-top: 3em;
 }
 
 .footer__logo {
